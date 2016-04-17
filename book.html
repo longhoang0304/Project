@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--
+		Responsive Web Design
+	-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- tittle -->
+	<title>Parallax - Booking</title>
+	<!-- reset css -->
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="book.css" />
+	<script src="jquery-2.2.3.min.js"></script>
+	<script src="book.js"></script>
+	<noscript>Xin hãy bật Javascript để có trải nghiệm tốt nhất!</noscript>
+</head>
+<body>
+	<h1>Xin Hãy Chọn Địa Điểm</h1>
+	<div id="check" class="btmnav"><a href="check.html">TRA THÔNG TIN VÉ</a></div>
+	<div id="home" class="btmnav"><a href="index.html">TRANG CHỦ</a></div>
+	<section class="landing" id="show">
+		<ul>
+			<li>VÙNG NÚI SAPA</li>
+			<li>VỊNH HẠ LONG</li>
+			<li>SƠN ĐOÒNG</li>
+			<li>MỘC CHÂU</li>
+		</ul>
+	</section>
+	<section class="content">
+			<h2>ĐĂNG KÝ VÉ</h2>
+			<form id="ticket">
+				<label for="tdate">Ngày Đi </label>
+				<select id="tdate">
+					 	<option value="30/4/2016">30/4/2016</option>
+					  	<option value="1/5/2016">1/5/2016</option>
+						<option value="2/5/2016">2/5/2016</option>
+						<option value="3/5/2016">3/5/2016</option>
+				</select>
+
+				<label for="ttime">Giờ Đi </label>
+				<select id="ttime">
+						<option value="7:00AM">7:00AM</option>
+					  	<option value="8:00AM">8:00AM</option>
+						<option value="9:00AM">9:00AM</option>
+						<option value="5:00PM">5:00PM</option>
+				</select>
+
+				<label for="from">Nơi Khởi Hành </label>
+				<input required type="text" id="from"></input>
+
+				<label for="ticknum">Lượng Vé </label>
+				<input required type="number" min=1 max=20 id="ticknum"></input>
+
+				<label for="price">Giá Vé </label>
+				<input type="text" id="price" disabled></input>
+
+				<input form="ticket" type="reset" value="Reset" class="bt"></input>
+				<input form="ticket" type="submit" value="Next" class="bt"></input>
+			</form>
+			<button class="back"><</button>
+	</section>
+	<section class="content">
+			<h2>THÔNG TIN NGƯỜI MUA</h2>
+			<form id="info">
+				<label for="fname">Họ </label>
+				<input required type="text" id="fname"></input>
+
+				<label for="lname">Tên </label>
+				<input required type="text" id="lname"></input>
+
+				<label for="bd">Ngày Sinh </label>
+				<input required type="date" id="bd" min='1900-01-01'></input>
+
+				<label for="phone">SĐT </label>
+				<input required type="text" id="phone"></input>
+
+				<label for="email">Email </label>
+				<input required type="email" id="email"></input>
+
+				<label for="add">Địa Chỉ </label>
+				<input required type="text" id="add"></input>
+
+				<label for="cmnd">CMND (bỏ các số không ở đầu)</label>
+				<input required type="number" min=1 id="cmnd"></input>
+
+				<input form="info" type="reset" class="bt"></input>
+				<input form="info" type="submit" class="bt" value="Finish"></input>
+			</form>
+		<div class="buttonholder">
+			<button class="back"><</button>
+		</div>
+	</section>
+	<section class="content">
+		<article>
+			
+			<h2>CẢM ƠN BẠN ĐÃ ỦNG HỘ DỊCH VỤ</h2>
+			<hr />
+			<h2>MÃ VÉ CỦA BẠN LÀ</h3>
+			<h3 id="tickid"></h4>
+			<h6>XIN LƯU Ý: MÃ VẼ CHỈ ĐƯỢC CẤP MỘT LẦN DUY NHẤT</h6>
+		</article>
+	</section>
+</body>
+</html>

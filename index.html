@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--
+		Responsive Web Design
+	-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- tittle -->
+	<title>Parallax - Viet Nam</title>
+	<!-- 
+		normalize.css file css để reset css.
+		normalize.css sẽ giúp các trình duyệt chuẩn hóa về 1 kiểu
+		file này có thể lấy trên mạng về 
+	-->
+	<link rel="stylesheet" href="normalize.css" />
+	<!-- 	
+		parallax.css sẽ giúp trang trí web. Tạo animation khi scroll,... 
+		file css này tự viết 100% :)
+	-->
+	<link rel="stylesheet" href="parallax.css" />
+	<!--
+		Sử dụng JQuery để tiết kiệm thời gian viết code JS.
+		Bên cạnh đó giúp code JS nhìn sáng sủa hơn
+	-->
+	<script src="jquery-2.2.3.min.js"></script>
+	<!--
+		parallax.js là file để tạo hiệu ứng parallax cho trang
+		Ngoài ra còn thêm các hiệu ứng khác nữa
+	-->
+	<script src="parallax.js"></script>
+	<script src="tickinfo.js"></script>
+	<noscript>Xin hãy bật Javascript để có trải nghiệm tốt nhất!</noscript>
+</head>
+<body>
+	<!-- 
+		navbar 
+		navbar này để theo dõi các slide đã qua
+		có thể tới các slide khác mà ko cần scroll liên tục
+	-->
+	<nav id="main">
+	<ul>
+		<li id="logo">Long Hoàng</li>
+		<li><a href="#header">Welcome</a></li>
+		<li><a href="#content1">Vịnh Hạ Long</a></li>
+		<li><a href="#content2">Sơn Đoòng</a></li>
+		<li><a href="#content3">Sapa</a></li>
+		<li><a href="#content4">Mộc Châu</a></li>
+		<li><a href="#footer">Đặt Vé</a></li>
+		<li><a href="check.html">Tra Thông Tin Vé</a></li>
+		<li><span id="about">Liên Hệ</span></li>
+		<li><span id="term">Điều Khoản</span></li>
+	</ul>
+	</nav>
+	<div id="check"><a href="check.html">TRA THÔNG TIN VÉ</a></div>
+	<!-- header -->
+
+	<header class="parallax fullHeight centerFlex" id="header">
+		<h1>Xin chào, Việt Nam</h1>
+		<h4>Cùng chiêm ngưỡng vẻ đẹp tuyệt vời của thiên nhiên Việt Nam</h4>
+	</header>
+
+	<!-- container -->
+
+	<div class="fullHeight" id="content1">
+		<div class="nav centerFlex">
+			<div class="arrw back centerFlex"> &lt; </div>
+			<div class="arrw next centerFlex"> &gt; </div>	
+		</div>
+		<nav class="p">
+				<ul>
+					<li id="now"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+		</nav>
+		<article>
+			<div class="content" id="showContent">
+				<article class="intro">
+					<h1>VỊNH HẠ LONG</h1>
+					<p>ĐẮM CHÌM CÙNG MỘT TRONG BẢY KỲ QUAN THẾ GIỚI</p>
+					<video>
+						 <source src="Image/Halong/intro.mp4" type="video/mp4">
+					</video>
+					<button class="play"></button>
+					<!-- <p class="black">click on video to play</p> -->
+
+				</article>
+			</div>
+			<div class="content">
+				<article>
+					<article class="des">
+						<h1>VẺ ĐẸP</h1>
+						<p>Tới Hạ Long bạn sẽ chìm đắm trong vẽ đẹp của tạo hóa. Sự hòa trộn màu sắc sẽ cho bạn một khung cảnh lãng mạn. Nhẹ nhàng và thư giãn. Giúp bạn quên đi những ngày làm việc, học hành căng thẳng, bị la mắng.</p>
+					</article>
+					<article class="pic">
+						<img src="Image/Halong/1.png" />
+						<img src="Image/Halong/3.jpg" />
+						<img src="Image/Halong/9.jpg" />
+					</article>
+				</article>
+				<article class="black"></article>
+			</div>
+			<div class="content">
+				<article>
+					<article class="des">
+						<h1>HOÀNG HÔN</h1>
+						<p>Một chút xanh, một chút vàng và một chút cam. Tạo nên một chút nhẹ nhàng. Làm lòng người phải kinh ngạc</p>
+					</article>
+					<article class="pic">
+						<img src="Image/Halong/2.jpg" />
+						<img src="Image/Halong/5.jpg" />
+						<img src="Image/Halong/7.jpg" />
+					</article>
+				</article>
+				<article class="black"></article>
+			</div>
+			<div class="content">
+				<article>
+					<article class="des">
+						<h1>HANG ĐỘNG</h1>
+						<p>Tới Hạ Long thì không thể không nói tới các hang động ở đây. Với vẻ đẹp kỳ bí của mình, các hang động đã làm mê hoặc bao nhiêu lòng người viếng thăm nó.</p>
+					</article>
+					<article class="pic">
+						<img src="Image/Halong/10.jpg" />
+						<img src="Image/Halong/11.jpg" />
+						<img src="Image/Halong/12.jpg" />
+					</article>
+				</article>
+				<article class="black"></article>
+			</div>
+		</article>
+	</div>
+	
+	<div class="fullHeight" id="content2">
+		<div class="nav centerFlex">
+			<div class="arrw back centerFlex"> &lt; </div>
+			<div class="arrw next centerFlex"> &gt; </div>	
+		</div>
+		<nav class="p">
+				<ul>
+					<li id="now"></li>
+					<li></li>
+				</ul>
+		</nav>
+		<article>
+			<div class="content" id="showContent">
+				<article class="intro">
+					<h1>HANG SƠN ĐOÒNG</h1>
+					<p>THIÊN ĐƯỜNG TRONG LÒNG ĐẤT</p>
+					<video>
+						 <source src="Image/SonDoong/intro.mp4" type="video/mp4">
+					</video>
+					<button class="play">PLAY</button>
+					<!-- <p class="black">click on video to play</p> -->
+				</article>
+			</div>
+			<div class="content">
+				<article>
+					<article class="des">
+						<h1>CHÌM ĐẮM</h1>
+						<p>KHÔNG LỜI NÀO CÓ THỂ TẢ ĐƯỢC VẼ ĐẸP CỦA SƠN ĐOÒNG.</p>
+					</article>
+					<article class="pic">
+						<img src="Image/SonDoong/4.jpg" />
+						<img src="Image/SonDoong/2.jpg" />
+						<img src="Image/SonDoong/10.jpg" />
+					</article>
+				</article>
+				<article class="black"></article>
+			</div>
+		</article>
+	</div>
+
+	<div class="fullHeight" id="content3">
+		<div class="nav centerFlex">
+			<div class="arrw back centerFlex"> &lt; </div>
+			<div class="arrw next centerFlex"> &gt; </div>	
+		</div>
+		<nav class="p">
+				<ul>
+					<li id="now"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+		</nav>
+		<article>
+			<div class="content" id="showContent">
+				<article class="intro">
+					<h1>Sapa</h1>
+					<p>NƠI ĐẤT GẶP GỠ TRỜI</p>
+					<video>
+						 <source src="Image/Sapa/intro.mp4" type="video/mp4">
+					</video>
+					<button class="play">PLAY</button>
+					<!-- <p class="black">click on video to play</p> -->
+				</article>
+			</div>
+			<div class="content">
+				<article>
+					<article class="des">
+						<h1>RUỘNG BẬC THANG</h1>
+						<p>Màu vàng của lúa chín. Màu xanh của trời đất. Một khung cảnh thơ mộng đến tuyệt vời. Một bức tranh không gì có thể tả được của bà mẹ tạo hóa</p>
+					</article>
+					<article class="pic">
+						<img src="Image/Sapa/r1.jpg" />
+						<img src="Image/Sapa/r2.jpg" />
+						<img src="Image/Sapa/r3.jpg" />
+					</article>
+				</article>
+				<article class="black"></article>
+			</div>
+			<div class="content">
+				<article>
+					<article class="des">
+						<h1>HOA ĐÀO</h1>
+						<p>Tới thăm Sapa vào những ngày Đào nở rộ. Lòng bồi hồi, nao nác mong chờ nếm vị Tết đang về trên môi.</p>
+					</article>
+					<article class="pic">
+						<img src="Image/Sapa/d4.jpg" />
+						<img src="Image/Sapa/d2.jpg" />
+						<img src="Image/Sapa/d3.jpg" />
+					</article>
+				</article>
+				<article class="black"></article>
+			</div>
+			<div class="content">
+				<article>
+					<article class="des">
+						<h1>CON NGƯỜI</h1>
+						<p>Sapa mê hoặc lòng người không phải chỉ ở cảnh đẹp núi rừng. Mà còn là con người nơi đây. Sự ngây thơ của các em bé, sự hiền hậu của dân làng.</p>
+					</article>
+					<article class="pic">
+						<img src="Image/Sapa/c2.jpg" />
+						<img src="Image/Sapa/c5.jpg" />
+						<img src="Image/Sapa/c4.jpg" />
+					</article>
+				</article>
+				<article class="black"></article>
+			</div>
+			<div class="content">
+		</article>
+	</div>
+	
+	<div class="fullHeight" id="content4">
+		<div class="nav centerFlex">
+			<div class="arrw back centerFlex"> &lt; </div>
+			<div class="arrw next centerFlex"> &gt; </div>	
+		</div>
+		<nav class="p">
+				<ul>
+					<li id="now"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+		</nav>
+		<article>
+			<div class="content" id="showContent">
+				<article class="intro">
+					<h1>Mộc Châu</h1>
+					<p>THIÊN ĐƯỜNG HOA CẢI</p>
+					<video>
+						 <source src="Image/MocChau/intro.mp4" type="video/mp4">
+					</video>
+					<button class="play">PLAY</button>
+					<!-- <p class="black">click on video to play</p> -->
+				</article>
+			</div>
+			<div class="content">
+				<article>
+					<article class="des">
+						<h1>CHÈ XANh</h1>
+						<p>Các đồng chè xanh mướt dài bất tận. Cùng nếm vị chè xanh. Chút đắng, chút chát, nhưng ngọt vô cùng.
+						</p>
+					</article>
+					<article class="pic">
+						<img src="Image/MocChau/6.jpg" />
+						<img src="Image/MocChau/11.jpg" />
+						<img src="Image/MocChau/13.jpg" />
+					</article>
+				</article>
+				<article class="black"></article>
+			</div>
+			<div class="content">
+				<article>
+					<article class="des">
+						<h1>CẢI TRẮNG</h1>
+						<p>Bạt ngàn mùa hoa cải trắng ở Mộc Châu</p>
+					</article>
+					<article class="pic">
+						<img src="Image/MocChau/2.jpg" />
+						<img src="Image/MocChau/5.jpg" />
+						<img src="Image/MocChau/9.jpg" />
+					</article>
+				</article>
+				<article class="black"></article>
+			</div>
+			<div class="content">
+				<article>
+					<article class="des">
+						<h1>ĐÀO MUỘN</h1>
+						<p>Nếu Sapa có đào thì Mộc Châu cũng có. Tuy có trễ, nhưng không bao giờ là muộn màng để khoe sắc</p>
+					</article>
+					<article class="pic">
+						<img src="Image/MocChau/1.png" />
+						<img src="Image/MocChau/12.jpg" />
+						<img src="Image/MocChau/7.jpg" />
+					</article>
+				</article>
+				<article class="black"></article>
+			</div>
+			<div class="content">
+				<article>
+					<article class="des">
+						<h1>PHA LUÔNG</h1>
+						<p>Muốn mạo hiểm? Tạo sao không thử tới đỉnh núi Pha Luông này khi tới Mộc Châu? Muốn tỏ tình? Chắc chắn đây không phải là một lựa chọn tồi.</p>
+					</article>
+					<article class="pic">
+						<img src="Image/MocChau/3.jpg" />
+						<img src="Image/MocChau/14.jpg" />
+						<img src="Image/MocChau/10.jpg" />
+					</article>
+				</article>
+				<article class="black"></article>
+			</div>
+		</article>
+	</div>
+	<div id="ticketInformation" class="hide">
+		<span id="close">X</span>
+		<div id="dataGoesHere"></div>
+	</div>
+	<!-- footer -->
+
+	<footer id="footer">
+		<div>
+		<a href="book.html"><h1>ĐẶT VÉ NGAY</h1></a>
+		</div>
+		<h5>để trải nghiệm việt nam ngay bây giờ</h5>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+@font-face {
+	font-family: Gentona;
+	src: url('Resource/Gentona/Rene Bieder - Gentona Bold.otf');
+}
+
+@font-face {
+	font-family: Andes;
+	src: url('Resource/AndesRoundedLight.otf');
+}
+/* */
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: url("Image/20.jpg");
+	background-size:cover;
+	background-position: fixed;
+}
+
+h1 {
+	color:white;
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	font-family: Gentona;
+	font-size: 50px;
+}
+
+
+#search {
+	width: 50%;
+	height: 5%;
+	position: relative;
+	left: 25%;
+	top: 47.5%;
+	margin: 0;
+}
+
+span#close {
+	cursor: pointer ;
+}
+
+input {
+	width: 93%;
+	height: 130%;
+	padding: 5px 10px;
+	/* position: absolute;
+	top: 47%;
+	left: 25%; */
+	border: 2px solid white;
+	background: transparent;
+	color: white;
+	float:left;
+	font-family: Andes, sans-serif;
+	font-size: 20px;
+}
+
+input:focus {
+	border: 2px solid white;
+	outline: 0;
+}
+
+button {
+	border: 0;
+	width: 7%;
+	height: 130%;
+	position: absolute;
+	/*top: 55%;
+	left: 25%; */
+	background: url(Image/s.png);
+	color: white;
+	border: 2px solid white;
+	border-left: 0;
+	float:left;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: 50%;
+}
+
+
+::-webkit-input-placeholder {
+   color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+@media screen and (max-height: 780px) {
+	#dataGoesHere {
+		overflow: scroll;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	#dataGoesHere {
+		overflow: scroll;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+	input {
+		width: 90%;
+		font-size: 15px;
+		padding: 0 5px;
+	}
+	button {
+		width: 10%;
+	}
+}
+
+@media screen and (max-height: 500px) {
+	h1 {
+		top: 25%;
+	}
+
+	#search {
+		top: 55%;
+	}
+
+	button {
+		font-size: 10px;
+		width: 20%;
+		background-size: 30%;
+	}
+
+	input {
+		width: 80%;
+		font-size: 15px;
+		padding: 0 5px;
+	}
+}
+
+
+
